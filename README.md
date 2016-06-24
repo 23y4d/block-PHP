@@ -26,4 +26,4 @@ new block($email,$whitelist);
 * [ZEYAD BESISO](https://github.com/23y4d/)
 
 ## Copyright and license
- Copyright 2016 under [MIT License](LICENSE).
+ Copyright 2016 under MIT License.
