@@ -9,6 +9,7 @@
 date_default_timezone_set("Asia/Gaza");
 
 
+namespace securtiy\block;
 
 class block {
 
@@ -96,20 +97,15 @@ RewriteRule ^images/?$   d.php [L,QSA]\nRewriteRule ^file/?$     d.php [L,QSA]\n
                 $ip=$_SERVER['REMOTE_ADDR'];
                 }
               $this->ip = $ip;
-
         }
 
 
 
         private function blockedUser(){
-
-
             if (empty($_SERVER['HTTP_REFERER'])) {
-
                   if(in_array($this->ip,$this->whitelist)) {
                     header('location:../index.php');
                     exit;
-
                   }else{
                             $ban =  "\n# The IP below was banned on {$this->time} for trying to access {$this->url}\n";
                             $ban .= "# Agent: {$this->agent}\n";
@@ -130,5 +126,4 @@ RewriteRule ^images/?$   d.php [L,QSA]\nRewriteRule ^file/?$     d.php [L,QSA]\n
                     }
                }
         }
-
 }
