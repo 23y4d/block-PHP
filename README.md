@@ -1,4 +1,4 @@
-# Security: Automatically block someone using a PHP and .htaccess
+# Security: Automatically block someone are snooping, using a PHP and .htaccess
 
 
 This can be helpful for a number of reasons. For example, you can use this class to ban people that are snooping around your website or see your file in website , or to ban robots that don’t respect your robots.txt file  
@@ -17,7 +17,7 @@ create file named d.php  and put in this config
   // '127.0.0.1'
 );
 
-new block($email,$whitelist);
+new securtiy\block\block($email,$whitelist);
 
 ?>
 ```
