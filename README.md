@@ -10,14 +10,15 @@ create file named d.php  and put in this config
 
 ```php
 <?php
-  require_once 'block.php';
-  
-  $whitelist = array(
-  // '123.123.123.123',
-  // '127.0.0.1'
-);
 
-new securtiy\block\block($email,$whitelist);
+ require_once 'block.php';
+    
+$list = array(
+      '127.0.0.1',
+      '0.0.0.0',
+      '128.0.0.1',
+);
+$z = new securtiy\block\block("exmple@exmple.com",$list);
 
 ?>
 ```
